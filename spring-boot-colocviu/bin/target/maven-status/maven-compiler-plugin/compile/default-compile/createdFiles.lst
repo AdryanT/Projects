@@ -1,0 +1,7 @@
+com\example\springrest\entity\Course.class
+com\example\springrest\entity\Department.class
+com\example\springrest\SpringRestApplication.class
+com\example\springrest\entity\Student.class
+com\example\springrest\repository\CourseRepository.class
+com\example\springrest\repository\DepartmentRepository.class
+com\example\springrest\repository\StudentRepository.class
