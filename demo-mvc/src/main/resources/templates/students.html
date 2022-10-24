@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Numar student</th>
+            <th>Nume Student</th>
+      <th>Prenume Student</th>
+            <th>Email</th>
+        </tr>
+        <tr th:each="student:${students}">
+            <td th:text="${student.number}">11</td>
+            <td th:text="${student.name}">Ciocoiu</td>
+	     <td th:text="${student.surname}">Radu-Mihail</td>
+            <td th:text="${student.email}">radu.ciocoiu@student.unitbv.ro</td>
+        </tr>
+    </table>
+</body>
+</html>
