@@ -1,0 +1,26 @@
+1.	pachet entity: adaugati in clasa Order urmatoarele atribute (+getteri/setteri):
+	long id -> corespunde coloanei ID (valoare generate, incepe de la 5)
+	double amount -> corespunde coloanei AMOUNT
+	Date dateCreated -> corespunde coloanei DATE_CREATED
+	long confirmationNumber -> corespunde coloanei CONFIRMATION_NUMBER
+	long userId -> corespunde coloanei USER_ID
+
+2.	pachet repository – interfata OrderRepository
+ - metoda custom care sa gaseasca toate comenzile care au valoare mai mare decat un parametru
+   dat ordonate dupa data
+
+3.	pachet service – clasa OrderService – metode getOrder, getAllOrders, saveOrder, deleteOrder
+
+4.	pachet controller – clasa OrderController – metode aferente celor din service (URI: /orders)
+
+a.	Metode HTTP GET, POST, DELETE
+
+-	testare GET, POST, DELETE - http://localhost:9001/orders/
+
+Body:
+    {
+    	"amount": 1523.5,
+	"dateCreated": "2022-01-05T16:14:33",
+	"confirmationNumber": 129,
+	"user_id": 5
+	}
